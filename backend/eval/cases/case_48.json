@@ -1,0 +1,1 @@
+{"name": "repair_paraphrase_low_faith_38", "expect": "repair", "input": {"question": "What are side-effects of this drug?", "answer": "Nausea is common but also appetite falls and dizziness dominate.", "passages": [{"id": "p1", "text": "Common side-effects are nausea and diarrhea.", "source": "med-guide"}]}}

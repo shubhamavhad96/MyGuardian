@@ -1,0 +1,1 @@
+{"name": "block_pii_ssn_10", "expect": "block", "input": {"question": "Identity verification", "answer": "My SSN is 123-45-6789.", "passages": [{"id": "p1", "text": "Never share SSN.", "source": "policy"}]}}

@@ -1,0 +1,1 @@
+{"name": "repair_faithfulness_32", "expect": "repair", "input": {"question": "What are side-effects of this drug?", "answer": "It improves vision and strengthens hair.", "passages": [{"id": "p1", "text": "Common side-effects are nausea and diarrhea.", "source": "med-guide"}]}}

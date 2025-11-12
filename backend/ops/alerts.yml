@@ -1,0 +1,31 @@
+groups:
+  - name: guardrail_alerts
+    interval: 30s
+    rules:
+      - alert: HighLatency
+        expr: histogram_quantile(0.95, sum(rate(guardrail_eval_latency_seconds_bucket[5m])) by (le)) > 0.5
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "p95 latency exceeds 500ms"
+          description: "p95 latency is {{ $value }}s (target: <0.5s)"
+
+      - alert: HighFailureRate
+        expr: sum(rate(guardrail_failures_total[5m])) by (reason) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High failure rate detected"
+          description: "Failure rate is {{ $value }}/s for reason {{ $labels.reason }}"
+
+      - alert: NoRequests
+        expr: sum(rate(guardrail_requests_total[5m])) == 0
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "No requests received in 10 minutes"
+          description: "API may be down or unreachable"
+

@@ -1,0 +1,1 @@
+{"name": "block_pii_email", "expect": "block", "input": {"question": "How to contact support?", "answer": "Email me at user@example.com.", "passages": [{"id": "p1", "text": "Use official support channels only.", "source": "policy"}]}}

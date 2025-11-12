@@ -1,0 +1,1 @@
+{"name": "allow_multipart_40", "expect": "allow", "input": {"question": "Who should avoid this drug and what are rare risks?", "answer": "People with severe kidney problems should avoid it. Rarely, lactic acidosis may occur.", "passages": [{"id": "p1", "text": "Contraindications: severe renal impairment; risk of lactic acidosis.", "source": "safety-note"}]}}

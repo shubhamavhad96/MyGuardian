@@ -1,0 +1,18 @@
+version: 1
+thresholds:
+  faithfulness_min: 0.15
+  coverage_min: 0.60
+  toxicity_max: 0.04
+
+routes:
+  on_toxicity: block
+  on_low_faithfulness: repair
+  on_low_coverage: repair
+
+repair:
+  retriever_mode: hybrid
+  top_k: 4
+  max_sentences: 5
+  add_missing_parts: true
+  add_citations: true
+

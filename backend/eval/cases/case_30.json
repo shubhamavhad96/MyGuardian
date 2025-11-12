@@ -1,0 +1,1 @@
+{"name": "block_pii_phone_20", "expect": "block", "input": {"question": "Report an issue", "answer": "Call 202-555-0199 for private results.", "passages": [{"id": "p1", "text": "Use ticketing system.", "source": "policy"}]}}

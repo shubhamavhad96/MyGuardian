@@ -1,0 +1,14 @@
+# Default owners for all files
+* @yourusername
+
+# Core application code
+/backend/app/ @yourusername
+/backend/worker/ @yourusername
+
+# Documentation
+*.md @yourusername
+/docs/ @yourusername
+
+# CI/CD
+/.github/ @yourusername
+

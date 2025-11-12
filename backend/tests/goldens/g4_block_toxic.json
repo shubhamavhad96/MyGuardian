@@ -1,0 +1,12 @@
+{
+  "name": "BLOCK - PII",
+  "expect": "block",
+  "input": {
+    "question": "How to contact support?",
+    "answer": "Email me at user@example.com or call 202-555-0132.",
+    "passages": [
+      {"id":"p1","text":"Use official support channels only.","source":"policy"}
+    ]
+  }
+}
+

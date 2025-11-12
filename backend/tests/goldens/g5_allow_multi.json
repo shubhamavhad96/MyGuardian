@@ -1,0 +1,12 @@
+{
+  "name": "ALLOW - multi-part well covered",
+  "expect": "allow",
+  "input": {
+    "question": "What are side-effects of metformin?",
+    "answer": "Common side-effects are nausea and diarrhea.",
+    "passages": [
+      {"id":"p1","text":"Common side-effects are nausea and diarrhea, sometimes stomach upset.","source":"med-guide"}
+    ]
+  }
+}
+
